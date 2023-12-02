@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/main.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&family=Nunito+Sans:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/mobole.CSS">
+    <title>Главная</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Company</h1></div>
+        <div class="header_center">
+            <ul class="top">
+                <li><a href="#">someEmail@mail.ru <img src="../Templates/free-icon-email-4697909.png" alt="почта"></a></li>
+                <li><a href="#">8(999)999-99-99 <img src="../Templates/free-icon-phone-call-126509.png" alt="телефон"></a></li>
+            </ul>
+            <nav class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li><a href="../index.html">О компании</a></li>
+                    <li><a href="catalog.html">Каталог</a>
+                        <ul>
+                            <li><a href="interactivnye-paneli-i-displayi.html">Интерактивные панели и комплексы</a></li>
+                            <li><a href="virtualnaya_realnost.html">Виртуальная реальность</a></li>
+                            <li><a href="interaktivnye_doski_i_proektory.html">Интерактивные доски и проекторы</a></li>
+                            <li><a href="videowall-VW55FH-L.html">Видеостены</a></li>
+                            <li><a href="interaktivnye_displei_i_monobloki.html">Интерактивные дисплеи и моноблоки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="dostavka.html">Доставка</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="page_content">    
+        <div class="contactcotainer">
+            <div>
+                <h2>Контакты</h2>
+                <div class="contactcotainer-inner">
+                    <h3>Отдел продаж</h3>
+                    <p style="color: gray;">8(999)999-99-99 someEmail@mail.ru</p>
+                </div>
+                <div class="contactcotainer-inner">
+                    <h3>Информация о юридическом лице</h3>
+                    <p>Общество с Ограниченной Ответственностью <br>«Т‑ГЕККО»
+                    <br>ОГРН 1227700014684
+                    <br>ИНН 9717109939
+                    </p>
+                </div>
+            </div>
+            <form class="contactform">    
+                <input type="text" id="textinput" placeholder="Ваше имя" autocomplete="off" maxlength="25" required>
+                <input type="email" id="emailinput" placeholder="E-mail" maxlength="70" required>
+                <input type="tel" value="+7" id="telinput" placeholder="Номер телефона" autocomplete="off" maxlength="12">
+                <textarea name="Коментарий" id="" rows="10" placeholder="Коментарий"></textarea>
+                <div class="polit"><input type="checkbox" id="checkpolit" required><label for="checkpolit">Я согласен с Условиями использования.
+                См. <a href="politika_konfidencialnosti.html" target="_blank">Политику конфиденциальности и использования файлов cookie</a></label></div>
+                <button type="submit">Связаться с нами</button>
+            </form>
+    </div>
+</div>
+</body>
+</html>

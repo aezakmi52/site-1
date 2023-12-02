@@ -1,0 +1,346 @@
+@media only screen and (max-width:430px) {
+    header {
+        position: relative;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .store {
+        padding: 0;
+    }
+
+    .market {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .market_cards {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .panels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .panel {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .panel img {
+        width: 80%;
+    }
+
+    .panel_max {
+        flex-direction: column;
+    }
+
+    .panel_max h3 {
+        font-size: 40px;
+    }
+
+    .panel_max_img {
+        width: 100%;
+    }
+
+    .panel_max_info {
+        width: 80%;
+    }
+
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .burger {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0;
+        right:0;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+        margin: 30px auto;
+        margin-right: 10px;
+        z-index: 10;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #000;
+    }
+    
+    .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 #000;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+    
+    .burger::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+    }
+    
+    .burger-checkbox:checked + .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0,0,0,0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+    
+    .burger-checkbox:checked + .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+    }
+
+    .menu-list {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: grid;
+        gap: 12px;
+        padding: 42px 0;
+        margin: 0;
+        background: whitesmoke;
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: .3s;
+        width: 100%;
+    }
+      
+    .burger-checkbox:checked ~ .menu-list {
+        transform: translateX(0);
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .top {
+        text-align: center;
+    }
+
+    .top li {
+        padding: 5px 0;
+    }
+
+    nav ul li:hover  ul{
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .slider__img {
+        width: 90%;
+    }
+
+    .slider__img img {
+        height: 300px;
+    }
+    
+    .prev {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .options {
+        width: 100%;
+    }
+
+    .options a {
+        padding-bottom: 10px;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .underinfo {
+        width: 100%;
+    }
+
+    .droppanel table {
+        width: 100%;
+    }
+
+    .droppanel table td {
+        text-align: center;
+    }
+
+    .loader {
+        flex-direction: column;
+    }
+
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .modal-body {
+        width: 100%;
+    }
+
+    .bg {
+        height: 450px;
+        position: absolute;
+        top: 150px;
+    }
+
+    .about {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 5% 0;
+        padding: 20px;
+    }
+
+    .ourinfo {
+        text-shadow: none;
+        color: black;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .callme {
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+        padding: 10px;
+    }
+
+    .callme button {
+        width: 60%;
+    }
+
+    .callme p {
+        text-align: center;
+
+    }
+
+    .mainpage-h2 {
+        margin-top: 40px;
+    }
+
+    .mainpage-container {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .inner {
+        width: 100%;
+    }
+
+    .mainpage-container img {
+        display: none;
+    }
+
+    .image-for-mobile-1 {
+        content: url(../Templates/application_area_1.webp);
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    }
+
+    .image-for-mobile-2 {
+        content: url(../Templates/application_area_2.webp);
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    }
+
+    .image-for-mobile-3 {
+        content: url(../Templates/application_area_11.webp);
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    }
+
+    .pluses {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .plus-center {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .plus-left {
+        width: 100%;
+    }
+
+    .plus-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .plus-left:hover {
+        transform-origin: none;
+        scale: none;
+    }
+
+    .plus-right:hover {
+        transform-origin: none;
+        scale: none;
+    }
+
+    .plus-center:hover {
+        transform-origin: none;
+        scale: none;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+    .dostavka-list2 {
+        flex-direction: column;
+    }
+
+    .dostavka-list2 li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contactcotainer {
+        flex-direction: column;
+    }
+
+    .contactform {
+        width: 100%;
+    }
+
+}
